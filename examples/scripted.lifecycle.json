@@ -1,0 +1,5 @@
+{
+  "setup": "WORKTREE_NAME=\"$HERDR_LIFECYCLE_LABEL\" ./scripts/worktree/setup.sh",
+  "teardown": "./scripts/worktree/teardown.sh --worktree \"$HERDR_LIFECYCLE_WORKTREE\"",
+  "protectedBranches": ["staging", "development"]
+}

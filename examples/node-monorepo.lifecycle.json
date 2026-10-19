@@ -1,0 +1,4 @@
+{
+  "copy": [".env*"],
+  "setup": "doppler setup --no-interactive && pnpm install"
+}

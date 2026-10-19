@@ -1,0 +1,17 @@
+# One global plugin; each repo opts in with .herdr/lifecycle.json (see README.md).
+# Install:  herdr plugin install ibedwi/herdr-lifecycle
+# Dev:      herdr plugin link .
+id = "ibedwi.lifecycle"
+name = "Worktree lifecycle"
+version = "0.1.0"
+min_herdr_version = "0.9.3"
+description = "Per-repo setup on herdr worktree create; teardown + safe branch cleanup on remove"
+platforms = ["macos", "linux"]
+
+[[events]]
+on = "worktree.created"
+command = ["bash", "./hooks/on-created.sh"]
+
+[[events]]
+on = "worktree.removed"
+command = ["bash", "./hooks/on-removed.sh"]
