@@ -74,3 +74,7 @@ herdr plugin log list --plugin ibedwi.lifecycle
 test/hooks.test.sh                          # stubbed herdr, real temp git repos
 BASH_BIN=/bin/bash /bin/bash test/hooks.test.sh   # same, on macOS bash 3.2
 ```
+
+## License
+
+[MIT](LICENSE)
